@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_gradient"
+    tools:context=".profilepage">
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="203dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:text="PROFILE NAME"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/profpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="167dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="56dp"
+        android:text="Followers:"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profpic" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginBottom="60dp"
+        android:background="#4DFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="#0FF0ECEC"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#B7FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="409dp"
+        android:layout_height="339dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <LinearLayout
+            android:id="@+id/view_followers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/picbtn"
+        android:layout_width="240dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+
+        android:background="#9EE4BEBE"
+        android:text="Profile Picture Camera"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toEndOf="@+id/profpic"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <Button
+        android:id="@+id/picbtn2"
+        android:layout_width="240dp"
+        android:layout_height="51dp"
+
+        android:background="#9EE4BEBE"
+        android:text="Profile Picture Gallery"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toEndOf="@+id/profpic"
+        app:layout_constraintTop_toBottomOf="@+id/picbtn" />
+
+    <TextView
+        android:id="@+id/tv_follower"
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+        android:hint="no follower"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

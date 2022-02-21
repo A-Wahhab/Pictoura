@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_gradient"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    tools:context="com.example.picturefinal.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/image"
+        android:src="@drawable/instagram"
+        app:tint="#E9FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Pictoura"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="#27F0ECEC"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="#27F0ECEC"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="322dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:background="#27F0ECEC"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+    <Button
+        android:id="@+id/btn_signuppage"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="322dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:background="#27F0ECEC"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="130dp"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#85FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="OR"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="130dp"
+            android:layout_height="0.1dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="#85FFFFFF" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp"
+        android:background="#4DFFFFFF"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="#0FF0ECEC"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#B7FFFFFF"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
